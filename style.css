@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+	--background: #f8f8f8;
+	--text: #333333;
+	--accordion: #ffffff;
+}
+::-webkit-scrollbar-track{
+    background: var(--background);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--text);
+    border-radius: 6px;
+    border: 3px solid var(--background);
+}
+body {
+    background-color: var(--background);
+    font-family: 'Poppins', sans-serif;
+}
+h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--text);
+}
+#textInput {
+    display: flex;
+    resize: none;
+    border: none;
+    border-radius: 15px;
+    width: 50vw;
+    box-shadow: 0 0 25px -12px #333333;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: var(--text);
+    padding: 20px;
+    outline: none;
+    font-size: 14px;
+    background: var(--accordion);
+}
+#textInput::-webkit-scrollbar {
+    display: none;
+}
+#convertBtn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 25vw;
+    border: none;
+    font-weight: 700;
+    border-radius: 15px;
+    background: var(--accordion);
+    box-shadow: 0 0 25px -12px #333333;
+    color: var(--text);
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+#convertBtn:hover {
+    letter-spacing: .5px;
+    color: var(--accordion);
+    background-color: #55ff90;
+    box-shadow: 0 0 25px -2px #55ff90;
+    transition: all 0.3s;
+}
+.morsecode__output {
+    background-color: var(--accordion);
+    box-shadow: 0 0 25px -12px #333333, inset 0 0 15px 0px #ffffff00;
+    min-height: 20vh;
+    width: 50vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.morsecode__output:hover {
+    box-shadow: 0 0 25px -12px #55ff90, inset 0 0 15px 0px #55ff90;
+    border: 3px solid #55ff90;
+    transition: all 0.3s;
+}
+#morseoutput {
+    font-size: 14px;
+    color: var(--text);
+}
+.morsecode__output h3 {
+    color: var(--accordion);
+    transition: all 0.3s;
+}
+.morsecode__output:hover h3 {
+    color: #55ff90;
+    transition: all 0.3s;
+}
+.hidden-copy-text{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--accordion);
+    text-align: center;
+}
