@@ -51,7 +51,7 @@ const copyClipboard = (idText) => {
     document.execCommand('copy') //stupid
     inputElement.parentNode.removeChild(inputElement)
 }
-function copyEmojiPasta() {
+const changeText = () => {
     var hiddenCopyText = document.getElementById("hidden-copy-text");
     hiddenCopyText.innerHTML = "COPIED";
     setTimeout(function(){
