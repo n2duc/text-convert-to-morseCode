@@ -13,9 +13,11 @@
     border-radius: 6px;
     border: 3px solid var(--background);
 }
+* {
+    font-family: 'Poppins', sans-serif;
+}
 body {
     background-color: var(--background);
-    font-family: 'Poppins', sans-serif;
 }
 h2 {
     text-align: center;
@@ -38,6 +40,7 @@ h2 {
     padding: 20px;
     outline: none;
     font-size: 14px;
+    font-weight: 500;
     background: var(--accordion);
 }
 #textInput::-webkit-scrollbar {
@@ -86,7 +89,8 @@ h2 {
     transition: all 0.3s;
 }
 #morseoutput {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 400;
     color: var(--text);
 }
 .morsecode__output h3 {
